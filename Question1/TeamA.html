@@ -1,3 +1,28 @@
-<html>
-  <H1>Hello World!!</H1>
-</html>
+<HTML>
+<Title>Question1</Title>
+<h1>Question1</h1>
+<p>おめでとう、暗証番号は正しかった<p>
+<p>太陽より始まる7桁の暗証番号を入力しろ</p>
+
+<input type="text" id="code">
+
+<button onclick="checkCode()">
+  送信
+</button>
+
+<p id="message"></p>
+
+<script>
+function checkCode() {
+  const code =
+    document.getElementById("code").value;
+
+  if (code === "8926543") {
+    window.location.href = "https://t-flatstone.github.io/Party-Game/GameClear/" ;
+  } else {
+    document.getElementById("message").innerText =
+      "不正解";
+  }
+}
+</script>
+</HTML>
