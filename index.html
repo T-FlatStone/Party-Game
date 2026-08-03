@@ -1,4 +1,26 @@
 <HTML>
-  <title>Hello World</title>
-  <H1>Hello World!</H1>
+<h1>Party Game</h1>
+
+<input type="text" id="code">
+
+<button onclick="checkCode()">
+  送信
+</button>
+
+<p id="message"></p>
+
+<script>
+function checkCode() {
+  const code =
+    document.getElementById("code").value;
+
+  if (code === "9742") {
+    document.getElementById("message").innerText =
+      "正解！";
+  } else {
+    document.getElementById("message").innerText =
+      "不正解";
+  }
+}
+</script>
 </HTML>
