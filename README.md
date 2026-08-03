@@ -1,2 +1,2 @@
 # Party-Game
-クリパ用ゲームコード用
+PartyGame!!!!
