@@ -1,8 +1,10 @@
 <HTML>
 <Title>Question1</Title>
 <h1>Question1</h1>
-<p>おめでとう、暗証番号は正しかった<p>
-<p>太陽より始まる7桁の暗証番号を入力しろ</p>
+<p>おめでとう、君は無事に最初の関門を突破した。<p>
+<p>次は仲間を探せ</p>
+<p>★のマークを持つ4人のパーティを作れ。</p>
+<p>そしてパーティの力を小さい順にならべろ。</p>
 
 <input type="text" id="code">
 
@@ -17,8 +19,8 @@ function checkCode() {
   const code =
     document.getElementById("code").value;
 
-  if (code === "8926543") {
-    window.location.href = "https://t-flatstone.github.io/Party-Game/GameClear/" ;
+  if (code === "2398") {
+    window.location.href = "https://t-flatstone.github.io/Party-Game/Question2/TeamA/index.html" ;
   } else {
     document.getElementById("message").innerText =
       "不正解";
