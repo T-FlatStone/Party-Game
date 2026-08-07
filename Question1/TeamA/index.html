@@ -1,0 +1,30 @@
+<HTML>
+<Title>Question1</Title>
+<h1>Question1</h1>
+<p>おめでとう、君は無事に最初の関門を突破した。<p>
+<p>次は仲間を探せ</p>
+<p>★のマークを持つ4人のパーティを作れ。</p>
+<p>そしてパーティの力を小さい順にならべろ。</p>
+
+<input type="text" id="code">
+
+<button onclick="checkCode()">
+  送信
+</button>
+
+<p id="message"></p>
+
+<script>
+function checkCode() {
+  const code =
+    document.getElementById("code").value;
+
+  if (code === "2398") {
+    window.location.href = "https://t-flatstone.github.io/Party-Game/Question2/TeamA/index.html" ;
+  } else {
+    document.getElementById("message").innerText =
+      "不正解";
+  }
+}
+</script>
+</HTML>
