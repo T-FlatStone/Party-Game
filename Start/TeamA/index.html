@@ -1,0 +1,26 @@
+<HTML>
+<Title>TopPage</Title>
+<h1>Input<font color=red>P</font><font color=green>A</font><font color=orange>S</font><font color=blue>S</font></h1>
+
+<input type="text" id="code">
+
+<button onclick="checkCode()">
+  送信
+</button>
+
+<p id="message"></p>
+
+<script>
+function checkCode() {
+  const code =
+    document.getElementById("code").value;
+
+  if (code === "9642") {
+    window.location.href = "https://t-flatstone.github.io/Party-Game/Question1/TeamA/index.html" ;
+  } else {
+    document.getElementById("message").innerText =
+      "不正解";
+  }
+}
+</script>
+</HTML>
