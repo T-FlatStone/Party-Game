@@ -1,0 +1,27 @@
+<HTML>
+<p>正解！次が最終問題だ。</p>
+<p>陽より始まる順にその7つの力を並べよ</p>
+<p>役割を同じくする者、その力を合わせよ</p>
+
+<input type="text" id="code">
+
+<button onclick="checkCode()">
+  送信
+</button>
+
+<p id="message"></p>
+
+<script>
+function checkCode() {
+  const code =
+    document.getElementById("code").value;
+
+  if (code === "8926546") {
+    window.location.href = "https://t-flatstone.github.io/Party-Game/GameClear/index.html" ;
+  } else {
+    document.getElementById("message").innerText =
+      "不正解";
+  }
+}
+</script>
+</HTML>
