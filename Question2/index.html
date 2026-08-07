@@ -1,3 +1,27 @@
 <HTML>
-<p>正解だ!テーブルの裏を確認しろ、次に進むためのアイテムがあるはずだ!<p>
+<Title>TopPage</Title>
+<p>扉を開くための鍵は見つかったか？</p>
+<p>鍵に書かれている暗証番号を入力しろ!</p>
+
+<input type="text" id="code">
+
+<button onclick="checkCode()">
+  送信
+</button>
+
+<p id="message"></p>
+
+<script>
+function checkCode() {
+  const code =
+    document.getElementById("code").value;
+
+  if (code === "8739") {
+    window.location.href = "https://t-flatstone.github.io/Party-Game/Question3/index.html" ;
+  } else {
+    document.getElementById("message").innerText =
+      "不正解";
+  }
+}
+</script>
 </HTML>
